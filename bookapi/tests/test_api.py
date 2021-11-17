@@ -27,7 +27,7 @@ def test_create_a_valid_book():
     }
 
     url = "http://localhost:8000/books/"
-    newbook = {'nome':"Game of Thrones","descricao":"luta","nota":10}
+    newbook = {'nome':"Game of Thrones","descricao":"Drama de época da HBO, com lutas, dragões, magias e romances","nota":10}
     insertReq = requests.post(url,data=newbook,headers=headers)
     insertReqJson = insertReq.json()
 
@@ -45,7 +45,7 @@ def test_create_a_invalid_book():
     }
 
     url = "http://localhost:8000/books/"
-    newbook = {'nome':"Game of Thrones","descricao":"luta","nota":10}
+    newbook = {'nome':"Game of Thrones","descricao":"Drama de época da HBO, com lutas, dragões, magias e romances","nota":10}
     insertReq = requests.post(url,data=newbook,headers=headers)
     insertReqJson = insertReq.json()
 
@@ -66,7 +66,7 @@ def test_get_one_book():
 
     url = "http://localhost:8000/books/"
 
-    newbook = {'nome':"Game of Thrones","descricao":"luta","nota":10}
+    newbook = {'nome':"Game of Thrones","descricao":"Drama de época da HBO, com lutas, dragões, magias e romances","nota":10}
     insertReq = requests.post(url,data=newbook,headers=headers)
 
     insertReqJSon = insertReq.json()
@@ -91,7 +91,7 @@ def test_updating_a_book():
     }
 
     url = "http://localhost:8000/books/"
-    newbook = {'nome':"Game of Thrones","descricao":"luta","nota":10}
+    newbook = {'nome':"Game of Thrones","descricao":"Drama de época da HBO, com lutas, dragões, magias e romances","nota":10}
     insertReq = requests.post(url,data=newbook,headers=headers)
     insertReqJson = insertReq.json()
 
@@ -118,7 +118,7 @@ def test_deleting_a_book():
     }
 
     url = "http://localhost:8000/books/"
-    newbook = {'nome':"Game of Thrones","descricao":"luta","nota":10}
+    newbook = {'nome':"Game of Thrones","descricao":"Drama de época da HBO, com lutas, dragões, magias e romances","nota":10}
     insertReq = requests.post(url,data=newbook,headers=headers)
     insertReqJson = insertReq.json()
     
